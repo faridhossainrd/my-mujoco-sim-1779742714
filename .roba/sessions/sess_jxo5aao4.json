@@ -1,0 +1,26 @@
+{
+  "sessionId": "sess_jxo5aao4",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses  \n\"Make the robot wave its right hand.\"  \n\"Show the robot bowing slightly.\"  \n\"Put the robot in a balanced T‑pose.\"\n\n✋ Hands  \n\"Close the left hand into a fist.\"  \n\"Open the right hand flat.\"  \n\"Make both hands gesture a thumbs‑up.\"\n\n🎬 Simulation  \n\"Run a walking cycle across the room.\"  \n\"Simulate the robot picking up a small box.\"  \n\"Create a smooth turning motion while the robot talks.\"\n\n⌨️ Code & Controls  \n\"Add keyboard shortcuts to toggle the robot’s waist twist.\"  \n\"Implement a simple controller for arm waving.\"  \n\"Expose a UI slider to adjust the robot’s walking speed.\""
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses  \n\"Make the robot wave its right hand.\"  \n\"Show the robot bowing slightly.\"  \n\"Put the robot in a balanced T‑pose.\"\n\n✋ Hands  \n\"Close the left hand into a fist.\"  \n\"Open the right hand flat.\"  \n\"Make both hands gesture a thumbs‑up.\"\n\n🎬 Simulation  \n\"Run a walking cycle across the room.\"  \n\"Simulate the robot picking up a small box.\"  \n\"Create a smooth turning motion while the robot talks.\"\n\n⌨️ Code & Controls  \n\"Add keyboard shortcuts to toggle the robot’s waist twist.\"  \n\"Implement a simple controller for arm waving.\"  \n\"Expose a UI slider to adjust the robot’s walking speed.\""
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/robacrh/roba/roba-laravel/repos/faridhossainrd/my-mujoco-sim-1779742714",
+  "savedAt": 1779745128581
+}

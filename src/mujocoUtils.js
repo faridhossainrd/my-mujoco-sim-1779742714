@@ -582,7 +582,7 @@ export function setupGUI(parentContext) {
   //   middle_1:  max curl     → -1.7453 rad (range -1.75 to 0)
   //   index_0:   max curl     → -1.5708 rad (range -1.57 to 0)
   //   index_1:   max curl     → -1.7453 rad (range -1.75 to 0)
-  const FIST_TARGETS = [
+  const LEFT_FIST_TARGETS = [
     { name: 'left_hand_thumb_0', value:  0.8    },
     { name: 'left_hand_thumb_1', value:  0.8    },
     { name: 'left_hand_thumb_2', value:  1.2    },
@@ -591,7 +591,7 @@ export function setupGUI(parentContext) {
     { name: 'left_hand_index_0',  value: -1.5708 },
     { name: 'left_hand_index_1',  value: -1.7453 },
   ];
-  const OPEN_TARGETS = [
+  const LEFT_OPEN_TARGETS = [
     { name: 'left_hand_thumb_0',  value: 0 },
     { name: 'left_hand_thumb_1',  value: 0 },
     { name: 'left_hand_thumb_2',  value: 0 },
@@ -599,6 +599,34 @@ export function setupGUI(parentContext) {
     { name: 'left_hand_middle_1', value: 0 },
     { name: 'left_hand_index_0',  value: 0 },
     { name: 'left_hand_index_1',  value: 0 },
+  ];
+
+  // ── Right Fist activity ────────────────────────────────────────────
+  // Right hand ctrlranges are mirrored relative to left:
+  //   thumb_0:   range -1.05 to 1.05  → fist: -0.8
+  //   thumb_1:   range -1.05 to 0.724 → fist: -0.8
+  //   thumb_2:   range -1.745 to 0    → fist: -1.2
+  //   middle_0:  range  0    to 1.571 → fist:  1.5708
+  //   middle_1:  range  0    to 1.745 → fist:  1.7453
+  //   index_0:   range  0    to 1.571 → fist:  1.5708
+  //   index_1:   range  0    to 1.745 → fist:  1.7453
+  const RIGHT_FIST_TARGETS = [
+    { name: 'right_hand_thumb_0',  value: -0.8    },
+    { name: 'right_hand_thumb_1',  value: -0.8    },
+    { name: 'right_hand_thumb_2',  value: -1.2    },
+    { name: 'right_hand_middle_0', value:  1.5708 },
+    { name: 'right_hand_middle_1', value:  1.7453 },
+    { name: 'right_hand_index_0',  value:  1.5708 },
+    { name: 'right_hand_index_1',  value:  1.7453 },
+  ];
+  const RIGHT_OPEN_TARGETS = [
+    { name: 'right_hand_thumb_0',  value: 0 },
+    { name: 'right_hand_thumb_1',  value: 0 },
+    { name: 'right_hand_thumb_2',  value: 0 },
+    { name: 'right_hand_middle_0', value: 0 },
+    { name: 'right_hand_middle_1', value: 0 },
+    { name: 'right_hand_index_0',  value: 0 },
+    { name: 'right_hand_index_1',  value: 0 },
   ];
 
   let _leftFistActive = false;
@@ -617,16 +645,44 @@ export function setupGUI(parentContext) {
       fistBtn.querySelector('.rcp-act-icon').textContent = '✊';
       fistBtn.querySelector('.rcp-act-label').textContent = 'Left Hand Fist';
       fistBtn.querySelector('.rcp-act-tag').textContent   = 'CLOSE';
-      animateActuators('leftFist', FIST_TARGETS, 700);
+      animateActuators('leftFist', LEFT_FIST_TARGETS, 700);
     } else {
       fistBtn.classList.remove('active');
       fistBtn.querySelector('.rcp-act-icon').textContent = '🖐';
       fistBtn.querySelector('.rcp-act-label').textContent = 'Left Hand Open';
       fistBtn.querySelector('.rcp-act-tag').textContent   = 'OPEN';
-      animateActuators('leftFist', OPEN_TARGETS, 700);
+      animateActuators('leftFist', LEFT_OPEN_TARGETS, 700);
     }
   });
   actBtnGrid.appendChild(fistBtn);
+
+  // ── Right Fist button ──────────────────────────────────────────────
+  let _rightFistActive = false;
+  const rightFistBtn = document.createElement('button');
+  rightFistBtn.className = 'rcp-activity-btn';
+  rightFistBtn.innerHTML = `
+    <span class="rcp-act-icon">✊</span>
+    <span class="rcp-act-label">Right Hand Fist</span>
+    <span class="rcp-act-tag">RIGHT HAND</span>
+  `;
+  rightFistBtn.title = 'Close the right hand into a fist (click again to open)';
+  rightFistBtn.addEventListener('click', () => {
+    _rightFistActive = !_rightFistActive;
+    if (_rightFistActive) {
+      rightFistBtn.classList.add('active');
+      rightFistBtn.querySelector('.rcp-act-icon').textContent = '✊';
+      rightFistBtn.querySelector('.rcp-act-label').textContent = 'Right Hand Fist';
+      rightFistBtn.querySelector('.rcp-act-tag').textContent   = 'CLOSE';
+      animateActuators('rightFist', RIGHT_FIST_TARGETS, 700);
+    } else {
+      rightFistBtn.classList.remove('active');
+      rightFistBtn.querySelector('.rcp-act-icon').textContent = '🖐';
+      rightFistBtn.querySelector('.rcp-act-label').textContent = 'Right Hand Open';
+      rightFistBtn.querySelector('.rcp-act-tag').textContent   = 'OPEN';
+      animateActuators('rightFist', RIGHT_OPEN_TARGETS, 700);
+    }
+  });
+  actBtnGrid.appendChild(rightFistBtn);
 
   // ── Keyboard shortcuts ────────────────────────────────────────────────
   document.addEventListener('keydown', (e) => {

@@ -1,0 +1,26 @@
+{
+  "sessionId": "sess_pw73wrso",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses\n\"make the robot wave its right arm\"\n\"pose the robot in a classic T‑pose\"\n\"show the robot bowing forward\"\n\n✋ Hands\n\"close the left hand into a fist\"\n\"open the right hand and spread the fingers\"\n\"make both hands clap together\"\n\n🎬 Simulation\n\"run a walking cycle across the floor\"\n\"simulate the robot turning its torso left\"\n\"have the robot jump and land gently\"\n\n⌨️ Code & Controls\n\"add keyboard shortcuts to trigger arm waves\"\n\"write a script to make the robot dance on beat\"\n\"expose joint sliders for fine‑tuning in the UI\""
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses\n\"make the robot wave its right arm\"\n\"pose the robot in a classic T‑pose\"\n\"show the robot bowing forward\"\n\n✋ Hands\n\"close the left hand into a fist\"\n\"open the right hand and spread the fingers\"\n\"make both hands clap together\"\n\n🎬 Simulation\n\"run a walking cycle across the floor\"\n\"simulate the robot turning its torso left\"\n\"have the robot jump and land gently\"\n\n⌨️ Code & Controls\n\"add keyboard shortcuts to trigger arm waves\"\n\"write a script to make the robot dance on beat\"\n\"expose joint sliders for fine‑tuning in the UI\""
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/robacrh/roba/roba-laravel/repos/faridhossainrd/my-mujoco-sim-1779742714",
+  "savedAt": 1779744923155
+}

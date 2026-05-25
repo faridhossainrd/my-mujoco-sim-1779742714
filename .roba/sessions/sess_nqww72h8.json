@@ -1,0 +1,18 @@
+{
+  "sessionId": "sess_nqww72h8",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/robacrh/roba/roba-laravel/repos/faridhossainrd/my-mujoco-sim-1779742714",
+  "savedAt": 1779744547879
+}

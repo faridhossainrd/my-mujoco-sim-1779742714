@@ -1,0 +1,26 @@
+{
+  "sessionId": "sess_vygtx9vj",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses\n\"Make the robot stand in a relaxed pose.\"\n\"Show the robot waving its right arm.\"\n\"Put the robot in a T‑pose for calibration.\"\n\n✋ Hands\n\"Close the left hand into a fist.\"\n\"Open the right hand and point forward.\"\n\"Make both hands clap together.\"\n\n🎬 Simulation\n\"Simulate the robot walking forward across the room.\"\n\"Run a balancing demo where it shifts weight onto one leg.\"\n\"Create a simple sit‑down and stand‑up motion.\"\n\n⌨️ Code & Controls\n\"Add keyboard shortcuts to trigger walking and waving.\"\n\"Expose a UI slider to control the robot’s waist rotation.\"\n\"Implement a script that makes the robot follow a moving target.\""
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "[ROBA_WELCOME_TRIGGER]"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Roba Copilot — your co-pilot for the Unitree G1. Here's what we can do together:\n\n🤖 Poses\n\"Make the robot stand in a relaxed pose.\"\n\"Show the robot waving its right arm.\"\n\"Put the robot in a T‑pose for calibration.\"\n\n✋ Hands\n\"Close the left hand into a fist.\"\n\"Open the right hand and point forward.\"\n\"Make both hands clap together.\"\n\n🎬 Simulation\n\"Simulate the robot walking forward across the room.\"\n\"Run a balancing demo where it shifts weight onto one leg.\"\n\"Create a simple sit‑down and stand‑up motion.\"\n\n⌨️ Code & Controls\n\"Add keyboard shortcuts to trigger walking and waving.\"\n\"Expose a UI slider to control the robot’s waist rotation.\"\n\"Implement a script that makes the robot follow a moving target.\""
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/robacrh/roba/roba-laravel/repos/faridhossainrd/my-mujoco-sim-1779742714",
+  "savedAt": 1779744970619
+}
